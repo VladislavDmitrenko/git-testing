@@ -549,6 +549,12 @@ p {
 input:focus {
   outline: none;
 }
+.container {
+  display: grid;
+  max-width: 1340px;
+  margin: auto;
+  padding: 0 20px;
+}
 .header {
   position: relative;
   display: grid;
@@ -569,6 +575,9 @@ input:focus {
   opacity: 0.8;
   background-color: #2d3651;
 }
+.header-content {
+  z-index: 1;
+}
 .header-menu {
   position: absolute;
   top: 0;
@@ -577,12 +586,6 @@ input:focus {
 }
 .header-menu .container {
   grid-template-columns: auto 1fr;
-}
-.container {
-  display: grid;
-  max-width: 1340px;
-  margin: auto;
-  padding: 0 20px;
 }
 .logo {
   letter-spacing: 0.5em;
@@ -599,7 +602,7 @@ input:focus {
 .logo span {
   display: inline-block;
   padding: 15px 7px 15px 15px;
-  border: 2px solid red;
+  border: 2px solid #d53d27;
 }
 .header-button {
   position: relative;
@@ -670,12 +673,12 @@ input:focus {
 .header-button_items a:focus {
   color: #d66926;
 }
-.header-content {
+/*.header-content {
   display: grid;
   max-width: 1340px;
   margin: auto;
   padding: 20px;
-}
+}*/
 .container {
   z-index: 1;
 }
@@ -955,6 +958,16 @@ button {
     text-align: center;
     background-color: #1b2030;
 }
+.footer .fab {
+    font-size: 36px;
+}
+.footer span:nth-of-type(1) {
+    font-weight: 100;
+}
+.footer span:nth-of-type(2) {
+    color: #e5e5e5;
+    font-weight: 700;
+}
 .footer-social {
     position: relative;
     display: grid;
@@ -962,15 +975,6 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(50px));
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     justify-content: center;
-}
-.footer-social a {
-    display: block;
-    padding: 10px;
-    transition: color 0.5s;
-}
-.footer .fab {
-    font-size: 36px;
-}
 }
 .footer-social::after {
     position: absolute;
@@ -981,12 +985,10 @@ button {
     content: "";
     background-color: rgba(255, 255, 255, 0.1);
 }
-.footer span:nth-of-type(1) {
-    font-weight: 100;
-}
-.footer span:nth-of-type(2) {
-    color: #e5e5e5;
-    font-weight: 700;
+.footer-social a {
+    display: block;
+    padding: 10px;
+    transition: color 0.5s;
 }
 .footer-social a:hover,
 .footer-social a:focus {
@@ -1023,7 +1025,7 @@ button {
     font-size: 2.5rem;
   }
 
-  .section {
+ .section {
     padding-top: 100px;
     padding-bottom: 80px;
   }

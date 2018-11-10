@@ -1,0 +1,14 @@
+.header-logo {
+	padding: 100px 20px; 
+	text-align: center;
+	background-color: $dark-color;
+	background-image: url(../img/header-bg.jpg); 
+	background-position: 50% 50%;
+	background-size: cover;
+	&_title {
+		display: block;
+	}
+	&_description {
+		display: block;
+	}
+}
